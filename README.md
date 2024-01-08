@@ -32,8 +32,6 @@ Drive-AI is designed to provide a smooth and efficient experience for buying and
 
     - gateway/: API Gateway configuration.
 
----
-
 ## Getting Started
 
 To get started with development or explore the project, follow these steps:
@@ -42,7 +40,7 @@ To get started with development or explore the project, follow these steps:
 
     - ```git clone https://github.com/AugustoAleman/DriveAi.git```
 
-    - ```cd drive-ai```
+    - ```cd DriveAI```
 
 2. **Explore the Code:**
 Browse through microservices/ to understand the modular structure.
