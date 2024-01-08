@@ -40,8 +40,9 @@ To get started with development or explore the project, follow these steps:
 
 1. **Clone the repository:**
 
-```git clone https://github.com/AugustoAleman/DriveAi.git```
-```cd drive-ai```
+    - ```git clone https://github.com/AugustoAleman/DriveAi.git```
+
+    - ```cd drive-ai```
 
 2. **Explore the Code:**
 Browse through microservices/ to understand the modular structure.
