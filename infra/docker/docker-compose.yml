@@ -1,0 +1,22 @@
+version: '3'
+services:
+  eureka:
+    image: andxtorres22/eureka:latest
+    ports:
+      - "8761:8761"    
+  zuul:
+    image: andxtorres22/zuul:latest
+    depends_on:
+      - eureka
+    ports:
+      - "8090:8090"
+  todos-ms:
+    image: andxtorres22/todo562:latest
+    depends_on:
+      - eureka
+      - zuul
+  users-ms:
+    image: andxtorres22/users562:latest
+    depends_on:
+      - eureka
+      - zuul
