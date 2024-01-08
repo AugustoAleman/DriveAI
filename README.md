@@ -3,10 +3,11 @@ This GitHub repository houses the diverse microservices and front-end components
 
 ---
 
-##Overview
+## Overview
+
 Drive-AI is designed to provide a smooth and efficient experience for buying and selling automobiles online. 
 
-##Repository Structure
+## Repository Structure
 
 1. Microservices
     - microservices/: Directory containing individual microservices, each contributing to specific functionalities.
@@ -33,7 +34,7 @@ Drive-AI is designed to provide a smooth and efficient experience for buying and
 
 ---
 
-##Getting Started
+## Getting Started
 
 To get started with development or explore the project, follow these steps:
 
