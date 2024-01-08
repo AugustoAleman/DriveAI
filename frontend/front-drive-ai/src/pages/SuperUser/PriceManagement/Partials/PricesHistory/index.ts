@@ -1,0 +1,1 @@
+export { default as PricesHistory } from './PricesHistory';

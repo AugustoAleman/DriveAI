@@ -1,0 +1,1 @@
+export { default as RegisterConfirmationCode } from './RegisterConfirmationCode';

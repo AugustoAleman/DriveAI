@@ -1,0 +1,1 @@
+export {default as SecondCardSection} from './SecondCardSection';

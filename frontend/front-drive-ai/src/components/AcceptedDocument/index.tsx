@@ -1,0 +1,1 @@
+export {default as AcceptedD} from './AcceptedD'

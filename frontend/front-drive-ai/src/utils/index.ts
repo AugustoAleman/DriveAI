@@ -1,0 +1,1 @@
+export {calculateOpeningComission, calculateInstallments, calculateDownPayment, calculatePercentileInterestRate, formatNumber} from './calculations'

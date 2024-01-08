@@ -1,0 +1,1 @@
+export { default as RegisterFormulaire } from './RegisterFormulaire';

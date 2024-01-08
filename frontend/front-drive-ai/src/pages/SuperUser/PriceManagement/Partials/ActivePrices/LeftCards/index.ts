@@ -1,0 +1,1 @@
+export { default as LeftCards } from './LeftCards';
