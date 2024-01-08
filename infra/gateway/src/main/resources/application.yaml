@@ -1,0 +1,39 @@
+server:
+  port: 8090
+spring:
+  application:
+    name: gateway-service
+  cloud:
+    gateway:
+      default-filters:
+        - DedupeResponseHeader=Access-Control-Allow-Origin Access-Control-Allow-Credentials, RETAIN_UNIQUE
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins: "*"
+            allowedHeaders: "*"
+            allowedMethods:
+              - GET
+              - POST
+              - PUT
+              - DELETE
+              - PATCH
+              - ORIGINS
+              - OPTIONS
+      routes:
+        - id: user
+          uri: https://usersms-rdewcgcrza-uw.a.run.app
+          predicates:
+            - Path=/v1/address/**, /v1/admissionRequests/**, /v1/automotive-group/**, /v1/dealership/**, /email/**, /v1/insurance/**, /v1/notifications/**, /v1/role/**, /v1/user/**, /v1/2fa/**, /v1/mock/**
+        - id: vehicle
+          uri: https://vehicles-ms-kubd27z4aq-uw.a.run.app
+          predicates:
+            - Path=/v1/vehicle/**, /v1/drivingTest/**, /v1/vehicles-ms/**
+        - id: documents
+          uri: https://documents-pwtzgfjlpa-uw.a.run.app
+          predicates:
+            - Path=/v1/s3/**,/v1/document/**,/v1/document-required/**,/v1/log/**
+        - id: sales-process
+          uri: https://salesprocess-ms-hft5ojmsba-uw.a.run.app
+          predicates:
+            - Path=/v1/sales-process/**
